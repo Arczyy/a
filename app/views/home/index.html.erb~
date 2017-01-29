@@ -4,4 +4,6 @@
 <div class ="jumbotron">
 <h1>Witaj w mojej aplikacji</h1>
 <p>Niedlugo rzuci Ci na kolana</p>
+<%=link_to 'O mnie' , home_about_path, class: 'btn btn-default' %>
+<%=link_to 'Strona glowna' , root_path, class: 'btn btn-primary' %>
 </div>

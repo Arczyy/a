@@ -1,4 +1,7 @@
-<%=render 'home/header'%>
 
+<div class ="jumbotron">
 <h1>O mnie...</h1>
 <p>Nazywam sie Artur i tworze aplikacje  </p>
+<%=link_to 'O mnie' , home_about_path, class: 'btn btn-default btn-lg btn-block' %>
+<%=link_to 'Strona glowna' , root_path, class: 'btn btn-primary btn-lg btn-block' %>
+</div>
