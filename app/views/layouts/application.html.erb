@@ -7,16 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%=render 'home/header'%>
-
-<% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
+<% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %> alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <%= value %>
+    </div>
 <% end %>
-<% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
-<% end %>
+
+<%= link_to 'Login', new_user_session_path %>
+
 <%= yield %>
-</div>
+
 </body>
 </html>
